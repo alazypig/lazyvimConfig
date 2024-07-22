@@ -21,6 +21,13 @@ if true then return {
     opts = { ensure_installed = { "prettier" } },
   },
 
+  {
+  'luozhiya/fittencode.nvim',
+  config = function()
+    require('fittencode').setup()
+  end,
+},
+
 
   {
     "neovim/nvim-lspconfig",

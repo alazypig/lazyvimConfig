@@ -7,3 +7,5 @@ opt.relativenumber = false
 opt.mouse = "a"
 opt.clipboard = "unnamedplus"
 vim.g.lazyvim_prettier_needs_config = true
+
+vim.opt.updatetime = 200
