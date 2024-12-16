@@ -201,4 +201,14 @@ return {
     "williamboman/mason.nvim",
     opts = { ensure_installed = { "prettier" } },
   },
+
+  {
+    "nvim-flutter/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "stevearc/dressing.nvim", -- optional for vim.ui.select
+    },
+    config = true,
+  },
 }
