@@ -4,7 +4,6 @@
 local keymap = vim.keymap
 
 keymap.set("i", "jk", "<Esc>")
-
 -- use fitten code
 keymap.set("i", "jj", function()
   require("fittencode").accept_all_suggestions()
