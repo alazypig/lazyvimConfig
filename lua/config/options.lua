@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.g.lazyvim_prettier_needs_config = true
+vim.g.autoformat = false
 
 local opt = vim.opt
 
