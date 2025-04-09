@@ -1,11 +1,25 @@
 return {
   {
-    "nvim-flutter/flutter-tools.nvim",
-    lazy = false, -- 确保插件不会被懒加载
+    "akinsho/flutter-tools.nvim",
+    lazy = false,
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "stevearc/dressing.nvim", -- 可选，提供更好的 UI 支持
+      "stevearc/dressing.nvim",
     },
-    config = true,
+    config = function()
+      -- 只在非 VSCode 环境下设置 flutter-tools
+      if not vim.g.vscode then
+        require("flutter-tools").setup({
+          lsp = {
+            color = {
+              enabled = true,
+              background = true,
+            },
+          },
+        })
+      end
+    end,
+    -- 只在非 VSCode 环境下加载插件
+    cond = not vim.g.vscode
   },
 }

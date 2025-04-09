@@ -2,6 +2,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
+      -- 确保安装以下语言的语法解析器
       ensure_installed = {
         "bash",
         "html",
