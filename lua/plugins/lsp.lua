@@ -7,7 +7,7 @@ return {
       servers = {
         pyright = {},         -- Python LSP 服务器配置
       },
-      inlay_hints = { enabled = false },  -- 禁用内联提示
+      inlay_hints = { enabled = true},  -- 禁用内联提示
     },
   },
 }
