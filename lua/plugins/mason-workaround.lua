@@ -1,7 +1,6 @@
 return {
   {
     "mason-org/mason.nvim",
-    version = "^1.0.0",
     opts = {
       -- 确保安装以下语言服务器和代码检查工具
       ensure_installed = {
@@ -16,5 +15,7 @@ return {
       },
     },
   },
-  { "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
+  {
+    "mason-org/mason-lspconfig.nvim",
+  },
 }
