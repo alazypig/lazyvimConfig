@@ -18,8 +18,8 @@ keymap.set("n", "zz", function()
 end, { desc = "Toggle fold under cursor" })
 
 -- use fitten code
-if not vim.g.vscode then
-  keymap.set("i", "jj", function()
-    require("fittencode").accept_all_suggestions()
-  end)
-end
+-- if not vim.g.vscode then
+--   keymap.set("i", "jj", function()
+--     require("fittencode").accept_all_suggestions()
+--   end)
+-- end
